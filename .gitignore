@@ -1,7 +1,0 @@
-## Python
-**/__pycache__/
-**/.pytest_cache/
-**/*.pcd
-**/*.py[cod]
-**/*.pyc
-**/*$py.class

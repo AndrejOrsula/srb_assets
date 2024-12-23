@@ -6,10 +6,7 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-      - id: check-ast
-      - id: check-builtin-literals
       - id: check-case-conflict
-      - id: check-docstring-first
       - id: check-executables-have-shebangs
       - id: check-merge-conflict
       - id: check-shebang-scripts-are-executable
@@ -17,7 +14,6 @@ repos:
       - id: check-vcs-permalinks
       - id: check-xml
       - id: check-yaml
-      - id: debug-statements
       - id: destroyed-symlinks
       - id: detect-private-key
       - id: end-of-file-fixer
@@ -25,24 +21,13 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
 
-  - repo: https://github.com/psf/black
-    rev: 24.10.0
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.21
     hooks:
-      - id: black
+      - id: mdformat
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.3.0
     hooks:
       - id: codespell
         args: ["--ignore-words-list", "crate"]
-
-  - repo: https://github.com/pycqa/isort
-    rev: 5.13.2
-    hooks:
-      - id: isort
-        args: ["--profile", "black"]
-
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.18
-    hooks:
-      - id: mdformat
