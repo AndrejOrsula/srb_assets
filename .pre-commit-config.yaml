@@ -4,7 +4,7 @@
 exclude: .*hdr|.*jpeg|.*jpg|.*png|.*usd|.*usda|.*usdc|.*usdz
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v6.0.0
     hooks:
       - id: check-case-conflict
       - id: check-executables-have-shebangs
@@ -22,12 +22,12 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.21
+    rev: 1.0.0
     hooks:
       - id: mdformat
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.3
     hooks:
       - id: codespell
         args: ["--ignore-words-list", "crate"]
